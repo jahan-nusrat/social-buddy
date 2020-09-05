@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import NavBar from '../pages/NavBar';
 import Post from './Post';
-import PostDetails from './PostDetails';
 import PostInfo from './PostInfo';
 function App () {
 	return (
