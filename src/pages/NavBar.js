@@ -27,7 +27,7 @@ export default function NavBar () {
 	const classes = useStyles();
 
 	return (
-		<div className={classes.root}>
+		<div className={classes.root} style={{ position: 'sticky', top: '0', zIndex: '11' }}>
 			<AppBar position="static" style={{ backgroundColor: '#02393E' }}>
 				<Toolbar>
 					<Typography className={classes.title} variant="h6" noWrap>

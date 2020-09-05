@@ -1,13 +1,14 @@
 import React from 'react';
+import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Container from '@material-ui/core/Container';
 import NavBar from '../pages/NavBar';
 import Post from './Post';
 import PostInfo from './PostInfo';
 import Error from './Error';
+
 function App () {
 	return (
-		<div>
+		<div className="bg">
 			<Router>
 				<Switch>
 					<Route exact path="/">
