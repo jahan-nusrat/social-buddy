@@ -10,6 +10,14 @@ function PostInfo () {
 	const [ comment, setComment ] = useState([]);
 	const [ loading, setLoading ] = useState(true);
 
+	const [ image, setImage ] = useState('');
+
+	useEffect(() => {
+		fetch('https://randomuser.me/api/').then((res) => res.json()).then((data) => {
+			setImage(data.results[0].picture);
+		});
+	}, []);
+
 	useEffect(() => {
 		let url = `https://jsonplaceholder.typicode.com/posts/${id}`;
 		fetch(url).then((res) => res.json()).then((data) => {
@@ -26,6 +34,7 @@ function PostInfo () {
 
 	return (
 		<div>
+			<img src={image.large} alt="" />
 			<h2>{user.title}</h2>
 			<h5>{user.body}</h5>
 			<p>comments: {comment.length}</p>

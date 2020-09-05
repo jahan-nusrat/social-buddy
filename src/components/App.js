@@ -4,9 +4,10 @@ import Container from '@material-ui/core/Container';
 import NavBar from '../pages/NavBar';
 import Post from './Post';
 import PostInfo from './PostInfo';
+import Error from './Error';
 function App () {
 	return (
-		<Container maxWidth="xl">
+		<div>
 			<Router>
 				<Switch>
 					<Route exact path="/">
@@ -19,10 +20,11 @@ function App () {
 					</Route>
 					<Route path="*">
 						<NavBar />
+						<Error />
 					</Route>
 				</Switch>
 			</Router>
-		</Container>
+		</div>
 	);
 }
 

@@ -14,9 +14,6 @@ function Comments ({ item }) {
 
 	return (
 		<div>
-			<div>
-				<img src={image.large} alt="" />
-			</div>
 			<p>{item.body}</p>
 			<p>{item.email}</p>
 			<Avatar alt="Remy Sharp" src={image.medium} />
