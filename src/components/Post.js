@@ -27,7 +27,7 @@ function Post () {
 				<Loading />
 			) : (
 				<div className="container mt-5">
-					<h5 className="text-center text-danger">See posts of {post.length} people</h5>
+					<h3 className="text-center text-danger">See posts of {post.length} people</h3>
 					<div className="row justify-content-center">{getPosts}</div>
 				</div>
 			)}

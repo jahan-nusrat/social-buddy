@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
 	root  : {
-		maxWidth : 600
+		maxWidth : 555
 	},
 	media : {
 		height       : 100,
@@ -70,18 +70,26 @@ function PostInfo () {
 							</Typography>
 						</CardContent>
 					</CardActionArea>
-					<CardActions>
-						<Button size="small" color="primary">
-							Share
-						</Button>
-						<Button size="small" color="primary">
-							Learn More
-						</Button>
+					<CardActions className="mb-3">
+						<button class="ui circular facebook icon button">
+							<i class="facebook icon" />
+						</button>
+						<button class="ui circular twitter icon button">
+							<i class="twitter icon" />
+						</button>
+						<button class="ui circular linkedin icon button">
+							<i class="linkedin icon" />
+						</button>
+						<div class="content">
+							<span className="right floated">
+								<i class="comment icon" />
+								comments: {comment.length}
+							</span>
+						</div>
 					</CardActions>
 				</Card>
 			</div>
 
-			<p>comments: {comment.length}</p>
 			{loading ? (
 				<Loading />
 			) : (
