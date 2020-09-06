@@ -19,8 +19,6 @@ function Post () {
 		return <PostDetails key={post.id} post={post} />;
 	});
 
-	console.log(getPosts);
-
 	return (
 		<div>
 			{loading ? (

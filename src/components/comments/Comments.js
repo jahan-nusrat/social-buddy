@@ -37,13 +37,11 @@ function Comments ({ item }) {
 		});
 	}, []);
 
-	console.log(image);
-
 	return (
 		<div className="container">
 			<div className="row justify-content-center">
 				<List className="col-md-6 pt-0" style={{ backgroundColor: '#fff' }}>
-					<Divider variant="outset" component="li" />
+					<Divider component="li" />
 					<ListItem alignItems="flex-start">
 						<ListItemAvatar>
 							<Avatar alt="Cindy Baker" src={image.picture.medium} />
@@ -60,7 +58,7 @@ function Comments ({ item }) {
 									>
 										{image.email}
 									</Typography>
-									<p>{item.body}</p>
+									<div>{item.body}</div>
 								</React.Fragment>
 							}
 						/>

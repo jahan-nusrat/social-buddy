@@ -9,7 +9,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
@@ -71,18 +70,18 @@ function PostInfo () {
 						</CardContent>
 					</CardActionArea>
 					<CardActions className="mb-3">
-						<button class="ui circular facebook icon button">
-							<i class="facebook icon" />
+						<button className="ui circular facebook icon button">
+							<i className="facebook icon" />
 						</button>
-						<button class="ui circular twitter icon button">
-							<i class="twitter icon" />
+						<button className="ui circular twitter icon button">
+							<i className="twitter icon" />
 						</button>
-						<button class="ui circular linkedin icon button">
-							<i class="linkedin icon" />
+						<button className="ui circular linkedin icon button">
+							<i className="linkedin icon" />
 						</button>
-						<div class="content">
+						<div className="content">
 							<span className="right floated">
-								<i class="comment icon" />
+								<i className="comment icon" />
 								comments: {comment.length}
 							</span>
 						</div>
